@@ -29,7 +29,12 @@ Public Class FRM_Collabo
 
     Private Sub FRM_Collabo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: cette ligne de code charge les données dans la table 'Active_Final_CommunDataSet.COLLABORATEUR'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+
         Me.COLLABORATEURTableAdapter.Fill(Me.Active_Final_CommunDataSet.COLLABORATEUR)
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MsgBox(Me.ComboBox1.Text)
     End Sub
 End Class
